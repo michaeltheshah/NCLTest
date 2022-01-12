@@ -47,6 +47,7 @@ class ShipInfoFragment : Fragment() {
                 }
                 is State.Error -> {
                     binding.progressBar.isVisible = false
+                    binding.shipName.text = "There was an error. Please try again later."
                 }
             }
         }
