@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NCLTest</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Select a ship</string>
+    <string name="second_fragment_label">Ship Info</string>
+    <string name="sky">SKY</string>
+    <string name="bliss">BLISS</string>
+    <string name="escape">ESCAPE</string>
+</resources>

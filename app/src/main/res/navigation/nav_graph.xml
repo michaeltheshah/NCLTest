@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@+id/nav_graph"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/ShipButtonsFragment">
+
+    <fragment
+        android:id="@+id/ShipButtonsFragment"
+        android:name="com.example.ncltest.ui.ShipButtonsFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_ship_buttons">
+
+        <action
+            android:id="@+id/openShipInfo"
+            app:destination="@id/ShipInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ShipInfoFragment"
+        android:name="com.example.ncltest.ui.ShipInfoFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_ship_info">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/ShipButtonsFragment" />
+        <argument
+            android:name="shipName"
+            app:argType="string" />
+    </fragment>
+</navigation>
